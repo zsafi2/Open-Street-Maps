@@ -1,1 +1,7 @@
-# Open-Street-Maps
+Project Overview (Starter Code)
+We’re all familiar with navigation apps. While we don’t have the ability to display the results graphically, we can at least perform the back-end operations of loading the map, building the graph, and computing the shortest weighted path between two points. In our case we’re going to navigate between UIC buildings on the East campus, using the footpaths. But the foundation is there to extend the program to do more general navigation between any two points.
+
+We are working with open-source maps from https://www.openstreetmap.org/.  Browse to the site and type “UIC” into the search field, and then click on the first search result. You’ll see the East campus highlighted. Notice the “export” button --- we used this button to download the map file (map.osm) we’ll be working with.
+
+
+Zoom in. We’re going to focus on two features of a map:  “Nodes” and “Ways”.  A node is a point on the map, consisting of 3 values:  id, latitude, and longitude. These are shown as red dots (there are thousands more). A way is a series of nodes that define something. The two most important examples in our case are buildings and footways. In the screenshot above, the buildings are labeled and the footways are the dashed lines. For a building, the nodes define the building’s perimeter.  For a footway, the nodes define the endpoints of the footway, but might also include intermediate points along the way (especially if the footway is not a straight line).  More details of openstreetmap are available on Wikipedia.
